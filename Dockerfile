@@ -9,10 +9,9 @@ RUN dpkg-divert --local --rename --add /sbin/initctl && ln -sf /bin/true /sbin/i
 
 RUN apt-get update \
     && apt-get install -y --force-yes --no-install-recommends supervisor \
-        openssh-server pwgen sudo vim-tiny \
+        openssh-server sudo \
         net-tools \
-        lxde-core x11vnc xvfb screen openbox \
-        gtk2-engines-murrine ttf-ubuntu-font-family \
+        lxde-core lxde-icon-theme x11vnc xvfb screen openbox \
         nodejs \
         firefox \
 	htop bmon nano \

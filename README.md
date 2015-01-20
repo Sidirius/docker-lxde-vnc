@@ -19,4 +19,5 @@ to create VNC Password Save password and leave docker via
 	CTRL+P & CTRL+Q
 
 Restart container via: 
+
 	docker restart lxde_vnc

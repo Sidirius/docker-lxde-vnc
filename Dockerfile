@@ -23,6 +23,7 @@ ADD startup.sh /
 ADD run.sh /
 ADD supervisord.conf /
 RUN chmod +x /run.sh
+CMD /run.sh
 EXPOSE 5900
 EXPOSE 22
 WORKDIR /

@@ -1,3 +1,4 @@
+#!/bin/bash
 # Setup a password for vnc
-mkdir /.vnc
-x11vnc -storepasswd $passwd ~/.vnc/passwd
+mkdir /root/.vnc
+x11vnc -storepasswd $passwd /root/.vnc/passwd

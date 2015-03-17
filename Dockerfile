@@ -20,6 +20,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
     && rm -rf /var/lib/apt/lists/*
     
 ADD startup.sh /
+ADD run.sh /
 ADD supervisord.conf /
 EXPOSE 5900
 EXPOSE 22

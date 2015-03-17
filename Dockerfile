@@ -20,11 +20,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
     && rm -rf /var/lib/apt/lists/*
     
 ADD startup.sh /
-ADD run.sh /
 ADD supervisord.conf /
-RUN chmod +x /run.sh
 EXPOSE 5900
 EXPOSE 22
 WORKDIR /
 ENTRYPOINT ["/startup.sh"]
-CMD /run.sh

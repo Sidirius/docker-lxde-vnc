@@ -15,6 +15,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
         nodejs \
         firefox \
 	htop bmon nano \
+	lxterminal \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*

@@ -19,10 +19,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
     
-# Setup a password for vnc
-RUN mkdir /.vnc
-RUN x11vnc -storepasswd $passwd ~/.vnc/passwd
-
 ADD startup.sh /
 ADD supervisord.conf /
 EXPOSE 5900

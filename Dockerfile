@@ -13,7 +13,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
         net-tools \
         lxde-core lxde-icon-theme x11vnc xvfb screen openbox \
         nodejs wget \
-        firefox \
+        firefox xrdp \
 	htop bmon nano \
 	lxterminal \
     && apt-get autoclean \
@@ -23,6 +23,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
 ADD startup.sh /
 ADD supervisord.conf /
 EXPOSE 5900
+EXPOSE 3389
 EXPOSE 22
 WORKDIR /
 ENTRYPOINT ["/startup.sh"]

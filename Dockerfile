@@ -12,7 +12,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y \
         openssh-server sudo \
         net-tools \
         lxde-core lxde-icon-theme x11vnc xvfb screen openbox \
-        nodejs \
+        nodejs wget \
         firefox \
 	htop bmon nano \
 	lxterminal \

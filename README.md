@@ -8,6 +8,4 @@ Manual Build:
 
 Run:
 --
-    docker run -it --name lxde_vnc -p 5900:5900 -e passwd="*your_password_for_vnc*" sidirius/docker-lxde-vnc
-    
-Leave docker via `CTRL+P & CTRL+Q`
+    docker run -dt --name lxde_vnc -p 5900:5900 -e passwd="*your_password_for_vnc*" sidirius/docker-lxde-vnc

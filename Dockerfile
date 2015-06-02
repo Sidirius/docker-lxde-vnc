@@ -16,12 +16,14 @@ RUN apt-get update && apt-get upgrade -y --force-yes && apt-get dist-upgrade -y 
         firefox \
 	htop bmon nano \
 	lxterminal \
+	vnc-java \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
     
 ADD startup.sh /
 ADD supervisord.conf /
+EXPOSE 5800
 EXPOSE 5900
 EXPOSE 22
 WORKDIR /
